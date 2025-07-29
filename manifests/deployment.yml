@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: joserodriguezsistemaspipelinesjavascriptdockerexam 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: joserodriguezsistemaspipelinesjavascriptdockerexam
+  template:
+    metadata:
+      labels:
+        app: joserodriguezsistemaspipelinesjavascriptdockerexam 
+    spec:
+      containers:
+        - name: joserodriguezsistemaspipelinesjavascriptdockerexam 
+          image: pipelinesjavascriptdockerexample.azurecr.io/joserodriguezsistemaspipelinesjavascriptdockerexam
+          ports:
+          - containerPort: 8080
